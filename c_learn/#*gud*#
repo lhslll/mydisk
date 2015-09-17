@@ -1,0 +1,66 @@
+Current directory is /home/husheng/e_lhs_temp/c_learn/
+GNU gdb (Ubuntu 7.7.1-0ubuntu5~14.04.2) 7.7.1
+Copyright (C) 2014 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "i686-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+(gdb) file ~/e_lhs_temp/c_learn/hello
+Reading symbols from ~/e_lhs_temp/c_learn/hello...done.
+(gdb) b main
+Breakpoint 1 at 0x804959e: file hello.cpp, line 104.
+(gdb) r
+Starting program: /home/husheng/e_lhs_temp/c_learn/hello 
+Traceback (most recent call last):
+  File "/usr/share/gdb/auto-load/usr/lib/i386-linux-gnu/libstdc++.so.6.0.19-gdb.py", line 63, in <module>
+    from libstdcxx.v6.printers import register_libstdcxx_printers
+ImportError: No module named 'libstdcxx'
+(gdb) n
+(gdb) s
+(gdb) p array
+$1 = (int (&)[10]) @0xbffff4d8: {725871085, -1211035960, -1211022072, 0, 1, -1208113056, -1073744552, -1207960940, 0, -1209284888}
+(gdb) p *array
+$2 = 725871085
+(gdb) p array[0]
+$3 = 725871085
+(gdb) r
+Starting program: /home/husheng/e_lhs_temp/c_learn/hello 
+Traceback (most recent call last):
+  File "/usr/share/gdb/auto-load/usr/lib/i386-linux-gnu/libstdc++.so.6.0.19-gdb.py", line 63, in <module>
+    from libstdcxx.v6.printers import register_libstdcxx_printers
+ImportError: No module named 'libstdcxx'
+(gdb) r
+Starting program: /home/husheng/e_lhs_temp/c_learn/hello 
+/dev/pts/26: No such file or directory.
+During startup program exited with code 1.
+(gdb) r
+Starting program: /home/husheng/e_lhs_temp/c_learn/hello 
+Traceback (most recent call last):
+  File "/usr/share/gdb/auto-load/usr/lib/i386-linux-gnu/libstdc++.so.6.0.19-gdb.py", line 63, in <module>
+    from libstdcxx.v6.printers import register_libstdcxx_printers
+ImportError: No module named 'libstdcxx'
+(gdb) 
+Current directory is /home/husheng/e_lhs_temp/c_learn/
+GNU gdb (Ubuntu 7.7.1-0ubuntu5~14.04.2) 7.7.1
+Copyright (C) 2014 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "i686-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+(gdb) 
